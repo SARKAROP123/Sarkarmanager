@@ -32,7 +32,7 @@ Your donation might also me get me a new feature or two, which I wasn't able to 
 
 All the fund would be put into my services such as database, storage and hosting!
 
-You can donate by contacting my owner: [𝗦𝗔𝗥𝗞𝗔𝗥](http://t.me/iamgojoof6eyes)
+You can donate by contacting my owner: [𝗦𝗔𝗥𝗞𝗔𝗥](https://t.me/TKS_JOIN)
      """
 
     LOGGER.info(f"{m.from_user.id} fetched donation text in {m.chat.id}")
@@ -111,7 +111,7 @@ async def start(c: Gojo, m: Message):
 𝗜 𝗔𝗠 𝗛𝗘𝗟𝗣 𝗠𝗘𝗡𝗔𝗚𝗘 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣
 /help 𝗛𝗘𝗟𝗣 𝗖𝗠𝗡𝗗 𝗨𝗦𝗘
 
-𝗝𝗢𝗜𝗡 [𝗔𝗕𝗢𝗨𝗧 𝗠𝗘](https://t.me/gojo_bots_network) to get information on all the latest updates."""
+𝗝𝗢𝗜𝗡 [𝗔𝗕𝗢𝗨𝗧 𝗠𝗘](https://t.me/TKS_JOIN)"""
 
             await m.reply_photo(
                 photo=str(choice(StartPic)),
@@ -150,7 +150,7 @@ async def start_back(_, q: CallbackQuery):
 𝗜 𝗔𝗠 𝗛𝗘𝗟𝗣 𝗠𝗘𝗡𝗔𝗚𝗘 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣
 /help 𝗛𝗘𝗟𝗣 𝗖𝗠𝗡𝗗 𝗨𝗦𝗘
 
-𝗝𝗢𝗜𝗡 [𝗔𝗕𝗢𝗨𝗧 𝗠𝗘](https://t.me/gojo_bots_network) to get information on all the latest updates."""
+𝗝𝗢𝗜𝗡 [𝗔𝗕𝗢𝗨𝗧 𝗠𝗘](https://t.me/TKS_JOIN) to get information on all the latest updates."""
        
 
         await q.edit_message_caption(
