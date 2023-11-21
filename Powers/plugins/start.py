@@ -32,7 +32,7 @@ Your donation might also me get me a new feature or two, which I wasn't able to 
 
 All the fund would be put into my services such as database, storage and hosting!
 
-You can donate by contacting my owner: [Captain Ezio](http://t.me/iamgojoof6eyes)
+You can donate by contacting my owner: [𝗦𝗔𝗥𝗞𝗔𝗥](http://t.me/iamgojoof6eyes)
      """
 
     LOGGER.info(f"{m.from_user.id} fetched donation text in {m.chat.id}")
@@ -107,11 +107,11 @@ async def start(c: Gojo, m: Message):
                 
         try:
             cpt = f"""
-Hey [{m.from_user.first_name}](http://t.me/{m.from_user.username})! I am Gojo ✨.
-I'm here to help you manage your group(s)!
-Hit /help to find out more about how to use me in my full potential!
+𝗛𝗘𝗬 [{m.from_user.first_name}](http://t.me/{m.from_user.username})!𝗜 𝗔𝗠 𝗠𝗔𝗡𝗔𝗚𝗘𝗠𝗘𝗡𝗧 𝗕𝗢𝗧✨.
+𝗜 𝗔𝗠 𝗛𝗘𝗟𝗣 𝗠𝗘𝗡𝗔𝗚𝗘 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣
+/help 𝗛𝗘𝗟𝗣 𝗖𝗠𝗡𝗗 𝗨𝗦𝗘
 
-Join my [News Channel](https://t.me/gojo_bots_network) to get information on all the latest updates."""
+𝗝𝗢𝗜𝗡 [𝗔𝗕𝗢𝗨𝗧 𝗠𝗘](https://t.me/gojo_bots_network) to get information on all the latest updates."""
 
             await m.reply_photo(
                 photo=str(choice(StartPic)),
@@ -126,7 +126,7 @@ Join my [News Channel](https://t.me/gojo_bots_network) to get information on all
         [
           [
             InlineKeyboardButton(
-              "Connect me to pm", 
+              "𝗖𝗢𝗡𝗡𝗘𝗖𝗧 𝗠𝗘 𝗣𝗠", 
               url=f"https://{Config.BOT_USERNAME}.t.me/",
             ),
           ],
@@ -146,11 +146,12 @@ Join my [News Channel](https://t.me/gojo_bots_network) to get information on all
 async def start_back(_, q: CallbackQuery):
     try:
         cpt = f"""
-Hey [{q.from_user.first_name}](http://t.me/{q.from_user.username})! I am Gojo ✨.
-I'm here to help you manage your group(s)!
-Hit /help to find out more about how to use me in my full potential!
+ 𝗛𝗘𝗬 [{m.from_user.first_name}](http://t.me/{m.from_user.username})!𝗜 𝗔𝗠 𝗠𝗔𝗡𝗔𝗚𝗘𝗠𝗘𝗡𝗧 𝗕𝗢𝗧✨.
+𝗜 𝗔𝗠 𝗛𝗘𝗟𝗣 𝗠𝗘𝗡𝗔𝗚𝗘 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣
+/help 𝗛𝗘𝗟𝗣 𝗖𝗠𝗡𝗗 𝗨𝗦𝗘
 
-Join my [News Channel](http://t.me/gojo_bots_network) to get information on all the latest updates."""
+𝗝𝗢𝗜𝗡 [𝗔𝗕𝗢𝗨𝗧 𝗠𝗘](https://t.me/gojo_bots_network) to get information on all the latest updates."""
+       
 
         await q.edit_message_caption(
             caption=cpt,
@@ -168,11 +169,11 @@ async def commands_menu(_, q: CallbackQuery):
     keyboard = ikb(ou, True)
     try:
         cpt = f"""
-Hey **[{q.from_user.first_name}](http://t.me/{q.from_user.username})**! I am Gojo✨.
-I'm here to help you manage your group(s)!
-Commands available:
-× /start: Start the bot
-× /help: Give's you this message.
+𝗛𝗘𝗬 [{m.from_user.first_name}](http://t.me/{m.from_user.username})!𝗜 𝗔𝗠 𝗠𝗔𝗡𝗔𝗚𝗘𝗠𝗘𝗡𝗧 𝗕𝗢𝗧✨.
+𝗜 𝗔𝗠 𝗛𝗘𝗟𝗣 𝗠𝗘𝗡𝗔𝗚𝗘 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣
+/help 𝗛𝗘𝗟𝗣 𝗖𝗠𝗡𝗗 𝗨𝗦𝗘
+× /start: 𝗦𝗧𝗔𝗥𝗧 𝗧𝗛𝗘 𝗕𝗢𝗧
+× /help: 𝗚𝗜𝗩𝗘 𝗬𝗢𝗨𝗣 𝗧𝗛𝗜𝗦 𝗠𝗘𝗦𝗦𝗔𝗚𝗘
 
 You can use `$` and `!` in placec of `/` as your prefix handler
 """
@@ -228,7 +229,7 @@ async def help_menu(_, m: Message):
                   [
                     [
                       InlineKeyboardButton(
-                        "Help",
+                        "𝗛𝗘𝗟𝗣",
                         url=f"t.me/{Config.BOT_USERNAME}?start={help_option}",
                         ),
                     ],
@@ -241,17 +242,17 @@ async def help_menu(_, m: Message):
             ou = await gen_cmds_kb(m)
             keyboard = ikb(ou, True)
             msg = f"""
-Hey **[{m.from_user.first_name}](http://t.me/{m.from_user.username})**!I am Gojo✨.
-I'm here to help you manage your group(s)!
-Commands available:
-× /start: Start the bot
-× /help: Give's you this message."""
+𝗛𝗘𝗬 [{m.from_user.first_name}](http://t.me/{m.from_user.username})!𝗜 𝗔𝗠 𝗠𝗔𝗡𝗔𝗚𝗘𝗠𝗘𝗡𝗧 𝗕𝗢𝗧✨.
+𝗜 𝗔𝗠 𝗛𝗘𝗟𝗣 𝗠𝗘𝗡𝗔𝗚𝗘 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣
+/help 𝗛𝗘𝗟𝗣 𝗖𝗠𝗡𝗗 𝗨𝗦𝗘
+× /start: 𝗦𝗧𝗔𝗥𝗧 𝗧𝗛𝗘 𝗕𝗢𝗧
+× /help: 𝗚𝗜𝗩𝗘 𝗬𝗢𝗨𝗣 𝗧𝗛𝗜𝗦 𝗠𝗘𝗦𝗦𝗔𝗚𝗘"""
         else:
             keyboard = InlineKeyboardMarkup(
               [
                 [
                   InlineKeyboardButton(
-                    "Help", 
+                    "𝗛𝗘𝗟𝗣", 
                     url=f"t.me/{Config.BOT_USERNAME}?start=start_help",
                   ),
                 ],
