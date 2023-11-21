@@ -39,47 +39,11 @@ async def gen_start_kb(q: Message or CallbackQuery):
         [
             [
                 (
-                    "➕ Add me to a chat!",
+                    "➕𝗔𝗗𝗗 𝗬𝗢𝗨𝗥 𝗚𝗥𝗣𝗨𝗣➕️",
                     f"https://t.me/{Config.BOT_USERNAME}?startgroup=new",
                     "url",
-                ),
                 (
-                    "Support 👥",
-                    f"https://t.me/{SUPPORT_GROUP}",
-                    "url",
-                ),
-            ],
-            [
-                (
-                    "📚 Commands & Help", "commands"
-                ),
-                (
-                    "👾 Bot info",
-                    "bot_curr_info"
-                )
-            ],
-            [
-                (
-                    "🗃️ Source Code",
-                    "https://github.com/Gojo-Bots/Gojo_Satoru",
-                    "url",
-                ),
-                (
-                    "Owner ❤️",
-                    Config.OWNER_ID,
-                    "user_id",
-                ),
-            ],
-            [
-                (
-                    "Essential",
-                    "https://t.me/+PcVYvdzNt4E1YjM1",
-                    "url",
-                ),
-                (
-                    "Powered by",
-                    f"https://{Config.SUPPORT_CHANNEL}.t.me",
-                    "url",
+                    "𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 & 𝗛𝗘𝗟𝗣", "commands"
                 ),
             ],
         ],
@@ -272,11 +236,11 @@ async def get_help_msg(m: Message or CallbackQuery, help_option: str):
         else:
             mes = m
         help_msg = f"""
-Hey **[{mes.from_user.first_name}](http://t.me/{mes.from_user.username})**!I am Gojo✨.
-I'm here to help you manage your groups!
-Commands available:
-× /start: Start the bot
-× /help: Give's you this message."""
+𝗛𝗘𝗬 **[{mes.from_user.first_name}](http://t.me/{mes.from_user.username})**!𝗜 𝗔𝗠 𝗠𝗔𝗡𝗔𝗚𝗘𝗠𝗘𝗡𝗧 𝗕𝗢𝗧✨.
+𝗜'𝗠 𝗛𝗘𝗥𝗘 𝗧𝗢 𝗛𝗘𝗟𝗣 𝗬𝗢𝗨 𝗠𝗔𝗡𝗔𝗚𝗘 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 
+Commands𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 𝗔𝗩𝗔𝗜𝗟𝗔𝗕𝗟𝗘:
+× /start: 𝗦𝗧𝗔𝗥𝗧 𝗧𝗛𝗘 𝗕𝗢𝗧
+× /help: 𝗚𝗜𝗩𝗘𝗦 𝗬𝗢𝗨 𝗧𝗛𝗜𝗦 𝗠𝗘𝗦𝗦𝗔𝗚𝗘"""
         ou = await gen_cmds_kb(m)
         help_kb = ikb(ou, True)
 
