@@ -44,8 +44,8 @@ async def gen_start_kb(q: Message or CallbackQuery):
                     "url",
                  )
                     "𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 & 𝗛𝗘𝗟𝗣", "commands"
-                )
-            ]
+                ),
+            ],
         ],
     )
 
