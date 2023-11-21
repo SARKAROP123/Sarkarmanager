@@ -42,7 +42,8 @@ async def gen_start_kb(q: Message or CallbackQuery):
                     "➕𝗔𝗗𝗗 𝗬𝗢𝗨𝗥 𝗚𝗥𝗣𝗨𝗣➕️",
                     f"https://t.me/{Config.BOT_USERNAME}?startgroup=new",
                     "url",
-                (
+                 )
+                 (
                     "𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 & 𝗛𝗘𝗟𝗣", "commands"
                 ),
             ]
