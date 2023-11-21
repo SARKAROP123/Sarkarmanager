@@ -10,7 +10,7 @@
       "Gojo",
       "Anime"
     ],
-    "repository": "https://github.com/Gojo-Bots/Gojo_Satoru",
+    "repository": "https://github.com/SARKAROP123/Sarkarmanager",
     "success_url": "https://t.me/GojoSuperbot",
     "env": {
       "BOT_TOKEN": {
@@ -21,32 +21,27 @@
       "API_ID": {
         "description": "Get API_ID from my.telegram.org, used for pyrogram base.",
         "required": true,
-        "value": ""
+        "value": "23523169"
       },
       "API_HASH": {
         "description": "Get API_HASH from my.telegram.org, used for pyrogram base.",
         "required": true,
-        "value": ""
+        "value": "7c3c56210947d7eb82e2a077b4f5c8c5"
       },
       "DB_URI": {
         "description": "Your MongoDB connection string.",
         "required": true,
         "value": ""
       },
-      "DB_NAME": {
-        "description": "Your MongoDB database name.",
-        "required": false,
-        "value": ""
-      },
       "OWNER_ID": {
         "description": "Your user ID as an integer.",
         "required": false,
-        "value": "1344569458"
+        "value": "6402115032"
       },
       "SUPPORT_GROUP": {
         "description": "Your Telegram support group chat username where users can contact in case of a problem..",
         "required": false,
-        "value": "gojo_bots_network"
+        "value": "tks_join"
       },
       "MESSAGE_DUMP": {
         "description": "Event logs channel where bot will send updates.",
@@ -66,26 +61,15 @@
       "SUPPORT_CHANNEL": {
         "description": "Channel where bot updates will be posted!",
         "required": false,
-        "value": "gojo_bots_network"
+        "value": "tks_join"
       },
       "SUDO_USERS": {
         "description": "A space-separated list of user IDs who you want to assign as sudo users.",
         "required": false,
-        "value": ""
+        "value": "6402115032"
       },
       "WHITELIST_USERS": {
         "description": "A space-separated list of user IDs whitelisted, cannot be restricted.",
-        "required": false,
-        "value": ""
-      },
-      "GENIUS_API" : {
-        "description": "Your Lyrics Genius Api Token. To fetch lyrics of songs",
-        "required": false,
-        "value": ""
-      },
-      
-      "BDB_URI": {
-        "description": "Your Mongodb uri different from the previous one to store more info",
         "required": false,
         "value": ""
       },
@@ -93,11 +77,6 @@
         "description": "Your time zone",
         "required": false,
         "value": "Asia/Kolkata"
-      },
-      "RMBG_API" : {
-        "description": "Your removebackground api to remove the background",
-        "required": false,
-        "value": ""
       },
       "WORKERS": {
         "description": "Number of workers to run the bot.",
